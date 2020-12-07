@@ -10,4 +10,4 @@ input_seats.map! do |boarding_pass|
     row * 8 + column
 end
 input_seats.sort!
-input_seats.each_with_index{|s, i| puts s+1 if s+1 != input_seats[i+1]}
+input_seats.each_with_index{|s, i| puts s + 1 if s+1 != input_seats[i+1]}
