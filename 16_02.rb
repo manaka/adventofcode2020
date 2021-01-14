@@ -32,11 +32,7 @@ departure_ranges = departure_ranges.map{|x| x.map{|e| z = e.split('-'); z[0].to_
 end
 
 single_variant = variants.select{|k,v| v.size == 1}.values.first
-<<<<<<< HEAD
 (0..variants.size) do
-=======
-loop do
->>>>>>> 96eb957e758a211e284ff986121494e0b057b863
     variants.select{|k,v| v.size > 1 }.map{|k,v| variants[k] = v - single_variant }
     single_variant = variants.select{|k,v| v.size == 1 }.values.flatten
     break if variants.select{|k,v| v.size == 1 } == variants.size
